@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	arr := make([][]int32, 6)
+	arr := make([][]int, 6)
 	for i := 0; i < 6; i++ {
-		arr[i] = make([]int32, 6)
+		arr[i] = make([]int, 6)
 		for j := 0; j < 6; j++ {
 			fmt.Scan(&arr[i][j])
 		}

@@ -2,9 +2,8 @@ package hourglass
 
 import "math"
 
-func Sum(arr [][]int32) int32 {
-	a, b, c, d := -1, 0, 1, 0
-	var bigger int32 = math.MinInt32
+func Sum(arr [][]int) int {
+	a, b, c, d, bigger := -1, 0, 1, 0, math.MinInt32
 
 	for h := 0; h < 4; h++ {
 		for v := 0; v < 4; v++ {
