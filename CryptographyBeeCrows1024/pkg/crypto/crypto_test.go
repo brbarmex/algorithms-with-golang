@@ -17,7 +17,7 @@ func TestCryptography(t *testing.T) {
 			expected:"1FECedc",
 		},
 		{
-			input:"vxpdyly .ph",
+			input:"vxpdylY .ph",
 			expected:`ks. \n{frzx`,
 		},
 		{
@@ -27,10 +27,9 @@ func TestCryptography(t *testing.T) {
 	}
 
 	for _, scenarios := range cases {
-		got := Cryptography(scenarios.input)
+		got := Encrypt(scenarios.input)
 		if got != scenarios.expected {
 			t.Errorf("Cryptography(v) = %s; Want %s;",got, scenarios.expected)
 		}
 	}
-
 }
