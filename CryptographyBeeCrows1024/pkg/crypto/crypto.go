@@ -25,3 +25,26 @@ func Encrypt(v string) string {
 
 	return string(bytes)
 }
+
+func Dencrypt(v string) string {
+
+	bytes := []byte(v)
+	for x := len(v)/2; x < len(v); x++{
+		bytes[x] = bytes[x]+1
+	} 
+
+	var aux byte
+	for x, y := 0, len(v)-1; x < len(v)/2; x, y = x+1, y-1 {
+		aux = bytes[x]
+		bytes[x] = bytes[y]
+		bytes[y] = aux 
+	}
+
+	for x, ancii := range bytes {
+		if  aux = ancii - 3; aux > 64 && aux < 91 || aux > 96 && aux < 122 {
+			bytes[x] = aux
+		}
+	}
+
+	return string(bytes)
+}

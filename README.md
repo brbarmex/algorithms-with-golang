@@ -11,4 +11,6 @@ Hi! I'm Bruno Melo and this repository contains a lot challenges solved on many 
 
 - [HackerRank-Array-Left-Rotation](https://github.com/BrunoBMelo/algorithms-with-golang/tree/main/Array-Left-Rotation) Rotate an array to left position
 
-- [URIOnlineJudge-Cryptografia](https://github.com/BrunoBMelo/algorithms-with-golang/tree/main/CryptographyBeeCrows1024) A simple cryptography
+- [URIOnlineJudge-Encrypt](https://github.com/BrunoBMelo/algorithms-with-golang/tree/main/CryptographyBeeCrows1024) A simple cryptography
+
+- [URIOnlineJudge-Dencrypt](https://github.com/BrunoBMelo/algorithms-with-golang/tree/main/CryptographyBeeCrows1024) A simple decrypt

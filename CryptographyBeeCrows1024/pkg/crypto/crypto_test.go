@@ -33,3 +33,34 @@ func TestCryptography(t *testing.T) {
 		}
 	}
 }
+
+func TestDencrypt(t *testing.T) {
+	var cases = []struct {
+		input string
+		expected string
+	}{
+		{
+			expected:"Texto #3",
+			input:"3# rvzgV",
+		},
+		{
+			expected:"abcABC1",
+			input:"1FECedc",
+		},
+		{
+			expected:"vxpdylY .ph",
+			input:`ks. \n{frzx`,
+		},
+		{
+			expected:"vv.xwfxo.fd",
+			input:"gi.r{hyz-xx",
+		},
+	}
+
+	for _, scenarios := range cases {
+		got := Dencrypt(scenarios.input)
+		if got != scenarios.expected {
+			t.Errorf("Dencrypt(v) = %s; Want %s;",got, scenarios.expected)
+		}
+	}
+}
